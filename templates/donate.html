@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Donate{% endblock %}
+
+{% block content %}
+<div class="row mt-4">
+    <div class="col-md-8 col-12">
+        <h2>Help Us Help The Hounds!</h2>
+        <h4>Every Dollar Goes to the Hounds</h4>
+
+        <p>Your donation, no matter how large or how small, helps us continue to take in retired racing Greyhounds and place them in loving, forever homes. With your help, we'll be able to provide a safe kennel, dog food, veterinary care, surgical care, spaying, neutering and medications to these loving dogs that want nothing more than a soft bed and a happy family to call their own.</p>
+
+        <p>SA Greys is all-volunteer, so 100% of your donation goes to helping the hounds.</p>
+        <a class="btn btn-primary btn-lg" href="https://sagreys.networkforgood.com/projects/181043-please-support-our-work" role="button">Make a donation</a>
+    </div>
+    <div class="col-md-4 d-none d-md-block">
+        <img src="{{ url_for('static', filename='img/donate_hound.jpeg') }}" class="img-fluid" alt="Hero Image">
+    </div>
+</div>
+{% endblock %}

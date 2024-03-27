@@ -1,0 +1,21 @@
+/* Navbar */
+.bg-success {
+    background-color: #28a745 !important; /* Green color */
+}
+
+.custom-footer {
+    background-color: #e9ecef; /* Slightly darker grey color */
+}
+
+.social-links {
+    text-align: right; /* Align social links to the right */
+}
+
+.social-links a {
+    margin-left: 10px; /* Add some space between social links */
+}
+
+.main-content {
+    margin-bottom: 30px; /* Adjust the value as needed */
+}
+

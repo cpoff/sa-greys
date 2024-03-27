@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid bg-light text-dark mb-0">
+    <div class="pl-5 pr-5">
+        <img src="{{ url_for('static', filename='img/hero_image.png') }}" class="img-fluid mb-3" alt="Hero Image">
+        <!-- <h1 class="display-4">Welcome to Our Website!</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget justo vel lorem placerat venenatis vel ut elit.</p>
+        <hr class="my-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget justo vel lorem placerat venenatis vel ut elit.</p> -->
+        <div class="text-center">
+            <a class="btn btn-primary btn-lg" href="/donate" role="button">Make a donation</a>
+        </div>
+    </div>
+</div>
+
+<div class="main-content p-5">
+    <!-- Main content -->
+    <p><b>SA Greys</b> is a Tucson-based, all-volunteer, 501(c)(3) non-profit organization dedicated to finding loving forever homes for retired racing greyhounds. Since our incorporation in 2012, we have placed hundreds of greyhounds in loving and qualified forever homes.</p>
+
+    <p>Our greatest accomplishment has been to rehabilitate injured or ill greyhounds. We have taken in many hounds who suffered career ending injuries or illnesses that required exceptional veterinary care. These hounds now enjoy retirement in their forever homes, just like the hound on your couch and in your heart. Special needs dogs are helped by Jackie’s Fund, a fund started when Jackie, our original poster dog, required costly veterinary expenses.</p>
+    <img src="{{ url_for('static', filename='img/snoot_vertical.jpeg') }}" class="d-none d-md-block float-right ml-3" alt="Greyhound Image">
+
+    <p>Transforming retired racers, especially those who are injured or ill, into “couch potatoes” takes dedicated volunteers and resources. Since our founding, we have incurred over $1,000,000 in expenses for veterinary care, treatment, and housing. It is worth it every time we place a happy, healthy greyhound in a forever home. Please join us in supporting the hounds in any way you can.</p>
+
+    <h3>Adopt</h3>
+    <p>Thinking about adoption? You’re at the right place! We work with farms and tracks nationwide to bring in retired racers. We’re dedicated to finding loving forever homes for these deserving hounds. Prior to adoption, they are spayed/neutered and tested for cat tolerance. Dogs spend a few weeks with trained volunteers to learn the ropes of home living and living with their new families.</p>
+    
+    <h3>Foster</h3>
+    <p>Every dog in foster care is one step closer to our goal of a loving forever home. Our objective is to help the dog become acquainted with family living. Your foster greyhound will experience many firsts – to walk on tile or stairs, to watch TV, to be in a house, to be with other dog breeds, cats, and perhaps children. You will guide and correct behaviors as their foster parent.</p>
+    
+    <h3>Who We Are</h3>
+    <p>SA Greys is a dedicated group of veteran greyhound adopters and volunteers, who are committed to seeking the very best lives for the greyhounds in our care. Located in the greater Tucson area, SA Greys is non-profit and entirely volunteer run, so we are able to squeeze every dollar for the care and promotion of this special and wondrous breed.</p>
+
+</div>
+{% endblock %}
