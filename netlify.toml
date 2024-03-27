@@ -1,12 +1,3 @@
 [build]
-  command = "pip install -r requirements.txt && python3 app.py"
-  publish = "/path/to/your/publish/directory"
+  command = "pip install -r requirements.txt && gunicorn -b 0.0.0.0:$PORT app:app"
 
-[context.production]
-  command = "pip install -r requirements.txt && python3 app.py"
-
-[context.deploy-preview]
-  command = "pip install -r requirements.txt && python3 app.py"
-
-[context.branch-deploy]
-  command = "pip install -r requirements.txt && python3 app.py"
